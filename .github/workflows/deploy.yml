@@ -53,6 +53,7 @@ jobs:
             optimize()'
     
     - run: echo "You can preview this pull request at https://juliahealth.org/juliahealth.github.io-previews/previews/PR${{ github.event.number }}"
+      if: github.event_name == 'pull_request'
 
     - name: Deploy (pull request previews)
       continue-on-error: true
