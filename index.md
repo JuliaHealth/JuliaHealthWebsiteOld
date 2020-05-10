@@ -18,6 +18,8 @@ Chat with us in the `#health-and-medicine` channel on [Slack](https://julialang.
 
 ## JuliaHealth packages
 
+Here is a list of Julia packages in the JuliaHealth organization:
+
 \textinput{/assets/scripts/package_list.md}
 
 ## BioJulia
