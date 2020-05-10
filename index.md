@@ -16,6 +16,10 @@ Post in the [Biology, Health, and Medicine category](https://discourse.julialang
 
 Chat with us in the `#health-and-medicine` channel on [Slack](https://julialang.slack.com). (Get a Slack invite [here](https://slackinvite.julialang.org).)
 
+## JuliaHealth packages
+
+\textinput{/assets/scripts/package_list.md}
+
 ## BioJulia
 
 Our friends and colleagues in the BioJulia organization use Julia in biology, bioinformatics, and computational biology. Check out their website and visit them on GitHub.

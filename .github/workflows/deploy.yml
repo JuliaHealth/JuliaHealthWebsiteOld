@@ -45,13 +45,16 @@ jobs:
         version: 1.4.1
 
     - name: Build site with Franklin.jl
-      run: julia -e '
-            using Pkg; Pkg.add(["NodeJS", "Franklin"]);
-            using NodeJS; run(`$(npm_cmd()) install highlight.js`);
-            using Franklin;
-            Pkg.activate("."); Pkg.instantiate();
-            optimize()'
-    
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: julia --project -e '
+            import Pkg;
+            Pkg.instantiate();
+            import NodeJS; run(`$(NodeJS.npm_cmd()) install highlight.js`);
+            include("_assets/scripts/generate_results.jl");
+            import Franklin;
+            Franklin.optimize()'
+
     - run: echo "You can preview this pull request at https://juliahealth.org/juliahealth.github.io-previews/previews/PR${{ github.event.number }}"
       if: github.event_name == 'pull_request'
 

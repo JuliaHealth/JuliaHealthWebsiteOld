@@ -3,7 +3,8 @@
 # this can be used as a tester to check that all the code
 # on your website runs properly.
 
-dir = @__DIR__
+file = abspath(@__FILE__)
+dir = abspath(dirname(file))
 
 """
     genplain(s)
@@ -18,10 +19,5 @@ function genplain(s::String)
     end
 end
 
-# output
-
-# genplain("script1.jl")
-
-# plots
-
-# include("script2.jl")
+include(abspath(dir, "package_list.jl"))
+generate_package_list("JuliaHealth", abspath(dir, "package_list.md"))
