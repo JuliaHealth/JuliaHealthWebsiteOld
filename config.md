@@ -8,6 +8,8 @@ The website_* must be defined for the RSS to work
 @def website_url   = "https://JuliaHealth.github.io/"
 
 @def author = "JuliaHealth contributors"
+@def title = "JuliaHealth"
+@def prepath = ""
 
 <!--
 Add here global latex commands to use throughout your
