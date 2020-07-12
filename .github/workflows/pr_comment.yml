@@ -1,0 +1,14 @@
+name: pr_comment
+on:
+  pull_request:
+    types: [opened, reopened]
+jobs:
+  pr_comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create PR comment
+        if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name
+        uses: thollander/actions-comment-pull-request@1f25fabed60c3f141743c3a522529950a8fb2191
+        with:
+          message: 'Once the build has completed, you can preview your PR at this URL: https://juliahealth.org/juliahealth.github.io-previews/previews/PRR${{ github.event.number }}/'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

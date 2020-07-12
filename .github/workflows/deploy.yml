@@ -21,17 +21,26 @@ jobs:
         persist-credentials: false
 
     - name: Install SSH Client (pull request previews)
-      continue-on-error: true
-      if: github.event_name == 'pull_request'
+      if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name
       uses: webfactory/ssh-agent@v0.2.0
       with:
         ssh-private-key: ${{ secrets.FRANKLIN_PRIV_PREVIEW }}
 
     - name: Install SSH Client (main)
-      if: github.ref == 'refs/heads/dev' && (github.event_name == 'push' || github.event_name == 'schedule')
+      if: github.event_name != 'pull_request'
       uses: webfactory/ssh-agent@v0.2.0
       with:
         ssh-private-key: ${{ secrets.FRANKLIN_PRIV }}
+
+    - name: Fix URLs for PR preview deployment (pull request previews)
+      if: github.event_name == 'pull_request'
+      run: |
+        cat config.md
+        rm -rf config.md.original
+        mv config.md config.md.original
+        sed -e 's/@def prepath = "bidss"/@def prepath = "bidss_previews\/previews\/PR${{ github.event.number }}"/g' -e 's/@def website_url   = "https:\/\/bcbi\.github\.io\/bidss\/"/@def website_url   = "https:\/\/bcbi\.github\.io\/bidss_previews\/previews\/PR${{ github.event.number }}\/"/g' config.md.original > config.md
+        rm -rf config.md.original
+        cat config.md
 
     - name: Install python
       uses: actions/setup-python@v1
@@ -61,8 +70,7 @@ jobs:
       if: github.event_name == 'pull_request'
 
     - name: Deploy (pull request previews)
-      continue-on-error: true
-      if: github.event_name == 'pull_request'
+      if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         BRANCH: gh-pages
