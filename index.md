@@ -16,6 +16,8 @@ Join us in the `#biology-health-and-medicine` stream on [Zulip](https://julialan
 
 Chat with us in the `#health-and-medicine` channel on [Slack](https://julialang.slack.com). (Get a Slack invite [here](https://slackinvite.julialang.org).)
 
+Here is some cool new content that I added!
+
 ## JuliaHealth packages
 
 Here is a list of Julia packages in the JuliaHealth organization:
