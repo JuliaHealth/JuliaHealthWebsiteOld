@@ -16,6 +16,10 @@ Join us in the `#biology-health-and-medicine` stream on [Zulip](https://julialan
 
 Chat with us in the `#health-and-medicine` channel on [Slack](https://julialang.slack.com). (Get a Slack invite [here](https://slackinvite.julialang.org).)
 
+Also, did you know: `1 + 1 = 2`
+
+And, even better: `3 * 5 = 15`
+
 ## JuliaHealth packages
 
 Here is a list of Julia packages in the JuliaHealth organization:
