@@ -14,7 +14,7 @@ Post in the [Biology, Health, and Medicine category](https://discourse.julialang
 
 Join us in the `#biology-health-and-medicine` stream on [Zulip](https://julialang.zulipchat.com).
 
-Chat with us in the `#health-and-medicine` channel on [Slack](https://julialang.slack.com). (Get a Slack invite [here](https://slackinvite.julialang.org).)
+Chat with us in the `#health-and-medicine` channel on [Slack](https://julialang.slack.com). (Get a Slack invite [here](https://julialang.org/slack/).)
 
 ## JuliaHealth packages
 
