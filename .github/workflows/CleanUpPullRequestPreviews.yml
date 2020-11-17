@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install SSH Client (pull request previews)
-        uses: webfactory/ssh-agent@v0.2.0
+        uses: webfactory/ssh-agent@v0.4.1
         with:
           ssh-private-key: ${{ secrets.FRANKLIN_PRIV_PREVIEW }}
       - run: julia --project=.ci/ -e 'using Pkg; Pkg.develop(Pkg.PackageSpec(url = "https://github.com/bcbi/CleanUpPullRequestPreviews.jl.git"))'
