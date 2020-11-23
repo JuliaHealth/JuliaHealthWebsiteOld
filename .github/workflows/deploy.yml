@@ -37,7 +37,7 @@ jobs:
       if: github.event_name == 'pull_request'
       run: |
         echo "JULIA_FRANKLIN_WEBSITE_URL=https://juliahealth.org/juliahealth.github.io-previews/previews/PR${{ github.event.number }}/" >> $GITHUB_ENV
-        echo "JULIA_FRANKLIN_PREPATH=:juliahealth.github.io-previews/previews/PR${{ github.event.number }}" >> $GITHUB_ENV
+        echo "JULIA_FRANKLIN_PREPATH=juliahealth.github.io-previews/previews/PR${{ github.event.number }}" >> $GITHUB_ENV
 
     - run: echo $JULIA_FRANKLIN_WEBSITE_URL
     - run: echo $JULIA_FRANKLIN_PREPATH
