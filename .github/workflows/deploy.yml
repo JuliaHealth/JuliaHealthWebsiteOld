@@ -77,7 +77,7 @@ jobs:
         TARGET_FOLDER: "previews/PR${{ github.event.number }}"
 
     - name: Deploy (main)
-      if: github.ref == 'refs/heads/dev' && (github.event_name == 'push' || github.event_name == 'schedule')
+      if: github.ref == 'refs/heads/dev' && (github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         BRANCH: master
