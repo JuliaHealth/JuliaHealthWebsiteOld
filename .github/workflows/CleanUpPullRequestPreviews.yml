@@ -1,11 +1,14 @@
 name: CleanUpPullRequestPreviews
 
 on:
+  pull_request:
+    types: [opened, closed, reopened]
   workflow_dispatch:
 
 jobs:
   CleanUpPullRequestPreviews:
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name # if this is a pull request build AND the pull request is NOT made from a fork
     steps:
       - name: Install SSH Client (pull request previews)
         uses: webfactory/ssh-agent@v0.4.1
