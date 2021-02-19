@@ -20,6 +20,7 @@ If you would like to add an organization to this list, please feel free to [make
 ## Labs and research groups
 
 * [BCBI](https://github.com/bcbi) – Center for Biomedical Informatics at Brown University ([website](https://brown.edu/go/bcbi))
+* [Holy Lab](https://github.com/HolyLab) - Holy Lab at Washington University in St. Louis ([website](http://holylab.wustl.edu/))
 
 ## Companies
 
