@@ -18,9 +18,8 @@ const package_list_jl_file = abspath(DIR, "package_list.jl") # _assets/scripts/p
 include(package_list_jl_file)
 const package_list_md_file = abspath(DIR, "package_list.md") # _assets/scripts/package_list.md
 const packages_to_exclude = String[
-    "FHIRClientJSON.jl",
-    "FHIRClientXML.jl",
-    "HealthMLBase.jl",
+    "FHIRClientJSON.jl", # deprecated in favor of JuliaHealth/FHIRClient.jl
+    "HealthMLBase.jl",   # deprecated
 ]
 const packages_to_include = String[]
 generate_package_list("JuliaHealth",
