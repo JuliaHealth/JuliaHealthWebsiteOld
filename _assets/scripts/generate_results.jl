@@ -19,6 +19,7 @@ include(package_list_jl_file)
 const package_list_md_file = abspath(DIR, "package_list.md") # _assets/scripts/package_list.md
 const packages_to_exclude = String[
     "FHIRClientJSON.jl", # deprecated in favor of JuliaHealth/FHIRClient.jl
+    "FHIRClientXML.jl",  # most users should use JuliaHealth/FHIRClient.jl instead
     "HealthMLBase.jl",   # deprecated
 ]
 const packages_to_include = String[]
