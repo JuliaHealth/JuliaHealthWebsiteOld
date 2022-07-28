@@ -13,6 +13,7 @@ If you would like to add an organization to this list, please feel free to [make
 * [BioJulia](https://github.com/BioJulia) – Biology, bioinformatics, and computational biology ([website](https://biojulia.net) | [Gitter](https://gitter.im/BioJulia/home))
 * [EcoJulia](https://github.com/EcoJulia) - Ecology ([website](https://ecojulia.github.io))
 * [JuliaHealth](https://github.com/JuliaHealth) – Medicine, health care, public health, and biomedical research ([website](https://juliahealth.org))
+* [JuliaEpi](https://github.com/JuliaEpi) – Epidemiology
 * [JuliaNeuro](https://github.com/JuliaNeuro) - Neuroscience ([website](https://julianeuro.github.io))
 * [JuliaNeuroscience](https://github.com/JuliaNeuroscience) - Neuroscience
 * [MagneticResonanceImaging](https://github.com/MagneticResonanceImaging) - Magnetic resonance imaging
