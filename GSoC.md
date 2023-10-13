@@ -40,7 +40,6 @@ for DBConnector
 
 This Jupyter notebook shows the flow of creating a prediction model from OMOP CDM using developed packages through the program.
 You can find it on juliahealth website - the tutorial section.
-
 For more details, this [blogpost] (https://medium.com/@fareedaabdelazeez/google-summer-of-code-2023-strengthening-healthcare-with-juliahealth-7b8fde5af9ec) wraps up the details of GSoC program achievements. Check Acknowledgments too!
 
 - Poster presentation at [JuliaCon 2023, _JuliaHealth's Tools for Patient-Level Predictions: Strengthening Capacity and Innovation_](/assets/JuliaCon-gsoc.pdf)

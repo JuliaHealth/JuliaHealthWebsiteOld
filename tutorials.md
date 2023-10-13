@@ -7,6 +7,6 @@ This notebook uses the packages:
 * [OMOPCDMCohortCreator](https://github.com/JuliaHealth/OMOPCDMCohortCreator.jl) for dealing with OMOP Databases
 * [LibPQ](https://github.com/chris-b1/LibPQ.jl#dbinterface) to connect to the database on the server (hidden for the server security)
 
-[The notebook](/assets/JuliaHealth-Patient-level-prediction.ipynb)
+[The notebook](/assets/JuliaHealth-Patient-level-prediction.html)
 
-The model predicts patients of AFib that got stroke and produces accuracy of 87% 
+The model predicts patients of AFib that got stroke and produces accuracy of 86% 
