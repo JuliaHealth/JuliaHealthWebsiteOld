@@ -10,7 +10,7 @@ If you would like to add an organization to this list, please feel free to [make
 
 ## Julia community organizations
 
-* [BioJulia](https://github.com/BioJulia) – Biology, bioinformatics, and computational biology ([website](https://biojulia.net) | [Gitter](https://gitter.im/BioJulia/home))
+* [BioJulia](https://github.com/BioJulia) – Biology, bioinformatics, and computational biology ([website](https://biojulia.dev) | [Gitter](https://gitter.im/BioJulia/home))
 * [EcoJulia](https://github.com/EcoJulia) - Ecology ([website](https://ecojulia.github.io))
 * [JuliaHealth](https://github.com/JuliaHealth) – Medicine, health care, public health, and biomedical research ([website](https://juliahealth.org))
 * [JuliaEpi](https://github.com/JuliaEpi) – Epidemiology
