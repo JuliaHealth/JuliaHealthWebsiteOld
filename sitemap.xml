@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://juliahealth.org/index.html</loc>
-    <lastmod>2025-02-10</lastmod>
+    <loc>https://juliahealth.org/meeting-notes/index.html</loc>
+    <lastmod>2025-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://juliahealth.org/related-organizations/index.html</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://juliahealth.org/meeting-notes/index.html</loc>
-    <lastmod>2025-02-10</lastmod>
+    <loc>https://juliahealth.org/index.html</loc>
+    <lastmod>2025-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
